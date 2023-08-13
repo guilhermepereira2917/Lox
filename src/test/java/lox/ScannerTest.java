@@ -1,8 +1,8 @@
-package test.java;
+package test.java.lox;
 
-import main.java.Scanner;
-import main.java.Token;
-import main.java.TokenType;
+import main.java.lox.Scanner;
+import main.java.lox.Token;
+import main.java.lox.TokenType;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

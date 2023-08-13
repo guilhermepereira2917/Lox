@@ -1,4 +1,4 @@
-package main.java;
+package main.java.lox;
 
 public enum TokenType {
     // Single-character tokens.

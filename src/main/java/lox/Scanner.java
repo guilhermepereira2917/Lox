@@ -1,4 +1,4 @@
-package main.java;
+package main.java.lox;
 
 import java.util.ArrayList;
 import java.util.HashMap;
