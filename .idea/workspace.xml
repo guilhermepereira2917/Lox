@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee1d62c-0fff-475b-96bd-70686beb6aa7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lox/AstPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tool/GenerateAst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
@@ -67,10 +70,65 @@
       <recent name="com.craftinginterpreters.lox" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScannerTest">
+  <component name="RunManager" selected="Application.AstPrinter">
+    <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.lox.AstPrinter" />
+      <module name="Lox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.lox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Expr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.lox.Expr" />
+      <module name="Lox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.lox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateAst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.tool.GenerateAst" />
+      <module name="Lox" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\Users\Guilherme Pereira\IdeaProjects\Lox\src\main\java\lox&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.tool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lox" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="main.java.Lox" />
       <module name="Lox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScannerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.lox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.lox" />
+      <option name="MAIN_CLASS_NAME" value="test.java.lox.ScannerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,85 +148,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerTest.testIdentifierAfterBlockComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ScannerTest" />
-      <option name="METHOD_NAME" value="testIdentifierAfterBlockComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScannerTest.testMultiLineBlockComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ScannerTest" />
-      <option name="METHOD_NAME" value="testMultiLineBlockComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScannerTest.testSourceContainsOnlyBlockComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ScannerTest" />
-      <option name="METHOD_NAME" value="testSourceContainsOnlyBlockComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScannerTest.testUnterminatedBlockComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java" />
-      <option name="MAIN_CLASS_NAME" value="test.java.ScannerTest" />
-      <option name="METHOD_NAME" value="testUnterminatedBlockComment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Lox" />
+      <item itemvalue="Application.AstPrinter" />
+      <item itemvalue="Application.Expr" />
+      <item itemvalue="Application.GenerateAst" />
       <item itemvalue="JUnit.ScannerTest" />
-      <item itemvalue="JUnit.ScannerTest.testIdentifierAfterBlockComment" />
-      <item itemvalue="JUnit.ScannerTest.testMultiLineBlockComment" />
-      <item itemvalue="JUnit.ScannerTest.testSourceContainsOnlyBlockComment" />
-      <item itemvalue="JUnit.ScannerTest.testUnterminatedBlockComment" />
+      <item itemvalue="JUnit.ScannerTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AstPrinter" />
+        <item itemvalue="Application.GenerateAst" />
+        <item itemvalue="Application.Expr" />
+        <item itemvalue="JUnit.ScannerTest (1)" />
         <item itemvalue="JUnit.ScannerTest" />
-        <item itemvalue="JUnit.ScannerTest.testUnterminatedBlockComment" />
-        <item itemvalue="JUnit.ScannerTest.testIdentifierAfterBlockComment" />
-        <item itemvalue="JUnit.ScannerTest.testMultiLineBlockComment" />
-        <item itemvalue="JUnit.ScannerTest.testSourceContainsOnlyBlockComment" />
       </list>
     </recent_temporary>
   </component>
@@ -183,12 +177,23 @@
       <workItem from="1691794523364" duration="3466000" />
       <workItem from="1691853271336" duration="6615000" />
       <workItem from="1691881037775" duration="4551000" />
-      <workItem from="1691958144359" duration="636000" />
+      <workItem from="1691958144359" duration="2046000" />
+      <workItem from="1691980090576" duration="3689000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
