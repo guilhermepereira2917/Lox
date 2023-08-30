@@ -16,11 +16,20 @@ public class GenerateAst {
         String outputDirectory = args[0];
 
         defineAst(outputDirectory, "Expr", Arrays.asList(
-                        "Binary   : Expr left, Token operator, Expr right",
-                        "Grouping : Expr expression",
-                        "Literal  : Object value",
-                        "Unary    : Token operator, Expr right"
-                ));
+                "Assign   : Token name, Expr value",
+                "Binary   : Expr left, Token operator, Expr right",
+                "Grouping : Expr expression",
+                "Literal  : Object value",
+                "Unary    : Token operator, Expr right",
+                "Variable : Token name"
+        ));
+
+        defineAst(outputDirectory, "Stmt", Arrays.asList(
+                "Block      : List<Stmt> statements",
+                "Expression : Expr expression",
+                "Print      : Expr expression",
+                "Var        : Token name, Expr initializer"
+        ));
     }
 
     private static void defineAst(String outputDirectory, String baseName, List<String> types) throws IOException {
@@ -28,6 +37,8 @@ public class GenerateAst {
         PrintWriter writer = new PrintWriter(path, StandardCharsets.UTF_8);
 
         writer.println("package main.java.lox;");
+        writer.println();
+        writer.println("import java.util.List;");
         writer.println();
         writer.println("public abstract class " + baseName + " {");
 
